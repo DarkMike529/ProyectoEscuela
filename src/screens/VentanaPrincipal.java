@@ -40,7 +40,7 @@ public class VentanaPrincipal extends JFrame {
         menuBachilleratos = new JMenu();
         menuBachilleratos.setText("Bachilleratos");
         //
-        menuVerBachilleratos = new JMenuItem("Ver todos los bachilleratos...")
+        menuVerBachilleratos = new JMenuItem("Ver todos los bachilleratos...");
 
         //
         menuAlumnos.add(menuVerAlumnos);
