@@ -10,6 +10,11 @@ public class VentanaPrincipal extends JFrame {
     private JMenuBar menuBar;
     private JMenu menuAlumnos;
     private JMenuItem menuInsertarAlumnos;
+    private JMenuItem menuVerAlumnos;
+    private JMenuItem menuEliminarAlumnos;
+
+    private JMenu menuBachilleratos;
+    private JMenuItem menuVerBachilleratos;
 
 
     public VentanaPrincipal(String title){
@@ -27,10 +32,27 @@ public class VentanaPrincipal extends JFrame {
         menuInsertarAlumnos = new JMenuItem();
         menuInsertarAlumnos.setText("Insertar...");
 
+        menuVerAlumnos = new JMenuItem("Ver todos lo alumnos...");
+
+        menuEliminarAlumnos = new JMenuItem("Dar de baja al alumno...");
+
+        //
+        menuBachilleratos = new JMenu();
+        menuBachilleratos.setText("Bachilleratos");
+        //
+        menuVerBachilleratos = new JMenuItem("Ver todos los bachilleratos...")
+
+        //
+        menuAlumnos.add(menuVerAlumnos);
         menuAlumnos.add(menuInsertarAlumnos);
+        menuAlumnos.add(menuEliminarAlumnos);
         menuBar.add(menuAlumnos);
         //this.add(menuBar);
         this.setJMenuBar(menuBar);
+
+        //
+        menuBachilleratos.add(menuVerBachilleratos);
+        menuBar.add(menuAlumnos);
 
 
         pack();
