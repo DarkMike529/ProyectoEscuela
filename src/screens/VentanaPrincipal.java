@@ -15,7 +15,6 @@ public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal(String title){
         this.setTitle(title);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(800, 700);
         initComponents();
     }
 
@@ -27,5 +26,13 @@ public class VentanaPrincipal extends JFrame {
 
         menuInsertarAlumnos = new JMenuItem();
         menuInsertarAlumnos.setText("Insertar...");
+
+        menuAlumnos.add(menuInsertarAlumnos);
+        menuBar.add(menuAlumnos);
+        //this.add(menuBar);
+        this.setJMenuBar(menuBar);
+
+
+        pack();
     }
 }
